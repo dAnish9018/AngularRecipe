@@ -1,0 +1,27 @@
+<div class="navbar navbar-default" appHeadScroll>
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a href="#" class="navbar-brand"> Recipe Book </a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <!-- href="#" (click)="onNavigation('recipe')" -->
+        <li routerLinkActive="active"><a routerLink="recipes">Recipes</a></li>
+
+        <!-- href="#" (click)="onNavigation('shopping-list')" -->
+        <li routerLinkActive="active">
+          <a routerLink="shopping-list">Shopping list</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown" appDropDown>
+          <a href="#" class="dropdown-toggle" role="button">Manage</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Save Data</a></li>
+            <li><a href="#">Fetch Data</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
